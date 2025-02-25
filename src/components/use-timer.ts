@@ -75,14 +75,17 @@ const useTimer = (initSettingTime: number) => {
   useEffect(() => {
     if (leftTime <= 0 && timerState === TIMER_STATE.RUNNING) {
       resetTimer()
+      
       // 音を鳴らす
       if (audioRef.current) {
-        audioRef.current.currentTime = 0 // 音声を最初から再生
-        audioRef.current.play().catch((error) => {
+        audioRef.current.currentTime = 0
+        audioRef.current.play().catch(error => {
           console.error('音声の再生に失敗しました:', error)
         })
       }
-      alert('時間です！！')
+      setTimeout(() => {
+        alert('時間です！！')
+      }, 500)
     }
   }, [leftTime, resetTimer, timerState])
 
