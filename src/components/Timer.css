@@ -1,0 +1,99 @@
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  color: inherit;
+  font: inherit;
+}
+.timer {
+  display: flex;
+  user-select: none;
+  color: #fbfbfb;
+  line-height: 1;
+}
+.main {
+  padding: 20px 30px;
+  width: 500px;
+  background-color: #292f35;
+}
+.timer-display {
+  font-size: 70px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.setting-buttons {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.setting-button {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #11adff;
+  border-radius: 10px;
+}
+.setting-button:hover {
+  background-color: #4971e6;
+}
+.control-buttons {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.reset-button {
+  width: 150px;
+  height: 50px;
+  background-color: #ffc100;
+  font-size: 32px;
+  border-radius: 10px;
+}
+.reset-button:hover {
+  background-color: #da2f26;
+}
+.start-button {
+  width: 150px;
+  height: 50px;
+  background-color: #0fbb49;
+  font-size: 32px;
+  border-radius: 10px;
+}
+.start-button:hover {
+  background-color: #6dbe88;
+}
+.pause-button {
+  width: 150px;
+  height: 50px;
+  background-color: #e65049;
+  font-size: 32px;
+  border-radius: 10px;
+}
+.pause-button:hover {
+  background-color: #e76963;
+}
+.presets {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  text-align: center;
+  background-color: #21262b;
+}
+.preset {
+  white-space: nowrap;
+  padding: 3px 0;
+  font-size: 18px;
+}
+.preset-button {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-left: 10px;
+  background-color: #1e7c52;
+  border-radius: 5px;
+}
+.preset-button:hover {
+  background-color: #5cd7a0;
+}
